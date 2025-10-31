@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 class Patient {
     static final int RETURN = 0;
@@ -107,10 +108,10 @@ class Patient {
     }
 
     ArrayList<Appointment> getAppointmentList() {
-       /* for(Appointment ap : appointmentList){
+        for(Appointment ap : appointmentList){
             System.out.format("%s %s\n", ap.appointmentDate, ap.appointmentTime);
             System.out.println(ap.appointmentDescription + "\n----------------");
-        } */
+        }
         return appointmentList;
     }
 
